@@ -181,7 +181,9 @@
 		}
 
 	h1 {
-		font-size: 2.25rem;
+		font-size: 55px;
+
+		font-weight:400;
 
 	}
 	img .logoimage {
@@ -196,6 +198,7 @@
 
 	h3 {
 		font-size: 1rem;
+		color:#000;
 	}
 
 	h4 {
@@ -1057,6 +1060,10 @@
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 70%);
+		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 70%);
+		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 70%);
+		background-image: radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 70%);
 	}
 
 		#bg:before, #bg:after {
@@ -1078,10 +1085,10 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(255, 231, 51,0.25), rgba(255, 231, 51,0.25)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(255, 231, 50,0.30), rgba(255, 231, 50,0.30)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-repeat: repeat;
 			z-index: 2;
 		}
 
@@ -1095,6 +1102,7 @@
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/bg.jpg");
+
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1565,7 +1573,6 @@
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.8rem;
-			opacity: 0.9;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
