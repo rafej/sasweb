@@ -136,7 +136,7 @@
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 2px rgba(255, 255, 255, 0.5);
+		border-bottom: dotted 2px #ffe733;
 		text-decoration: none;
 		color: inherit;
 	}
@@ -1499,6 +1499,7 @@
 			}
 
 			#main article .close {
+				color: rgb(255, 228, 28);
 				display: block;
 				position: absolute;
 				top: 0;
@@ -1528,14 +1529,16 @@
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
+					background-color: rgb(255, 228, 28);
+
 				}
 
 				#main article .close:hover:before {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(255, 228, 28,0.5);
 				}
 
 				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: rgba(255, 228, 28,0.7);
 				}
 
 		@media screen and (max-width: 736px) {
@@ -1579,6 +1582,7 @@
 			letter-spacing: 0.2rem;
 			font-size: 0.8rem;
 			margin-bottom: 0;
+			font-weight: 600;
 			text-transform: uppercase;
 		}
 
